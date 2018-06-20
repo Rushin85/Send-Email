@@ -1,7 +1,0 @@
-import smtplib
-
-server = smtplib.SMTP('smtp.gmail.com', 587)
-server.starttls()
-server.login('timur085','psw')
-msg = "Hello World!"
-server.sendmail("timur085@gmail.com","timur085@gmail.com", msg)
