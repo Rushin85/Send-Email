@@ -1,0 +1,7 @@
+import smtplib
+
+server = smtplib.SMTP('smtp.gmail.com', 587)
+server.starttls()
+server.login('your log in','your password')
+msg = "Hello World! This is my final project. I made a script to send email messages!!!"
+server.sendmail("senders email","recievers email", msg)
